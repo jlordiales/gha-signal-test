@@ -1,0 +1,13 @@
+name: CI
+on: [push]
+env:
+  GO111MODULE: on
+
+jobs:
+  test:
+    name: Signal test
+    runs-on: ubuntu-latest
+    container: jlordiales/gha-signal-test:v1
+    steps:
+    - name: Run
+      run: /bin/main
