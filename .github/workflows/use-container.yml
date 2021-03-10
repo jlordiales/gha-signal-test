@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     container: 
       image: jlordiales/gha-signal-test:v1
-      options: "--entrypoint sh"
+      options: "--init"
     steps:
+    - name: ps
+      run: ps aux
     - name: Run
       run: /bin/main
