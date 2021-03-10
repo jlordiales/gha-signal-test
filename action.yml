@@ -1,0 +1,9 @@
+name: Test signal
+author: jlordiales
+description: "tests signals"
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: anchor
+  color: white
