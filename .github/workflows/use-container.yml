@@ -7,7 +7,9 @@ jobs:
   test:
     name: Signal test
     runs-on: ubuntu-latest
-    container: jlordiales/gha-signal-test:v1
+    container: 
+      image: jlordiales/gha-signal-test:v1
+      options: "--entrypoint sh"
     steps:
     - name: Run
       run: /bin/main
